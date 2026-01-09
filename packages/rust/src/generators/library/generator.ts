@@ -53,9 +53,8 @@ export default async function libraryGenerator(
     projectType: 'library',
     sourceRoot: `${normalizedOptions.projectRoot}/src`,
     targets: {
-      build: addCheckExecutor({ 'target-dir': normalizedOptions.targetDir }),
-      test: addTestExecutor({ 'target-dir': normalizedOptions.targetDir }),
-      lint: addLintExecutor({ 'target-dir': normalizedOptions.targetDir }),
+      test: addTestExecutor(),
+      lint: addLintExecutor(),
     },
     tags: normalizedOptions.parsedTags,
   });
