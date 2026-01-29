@@ -11,7 +11,7 @@ export function addBuildExecutor(
   return {
     cache: true,
     executor: '@monodon/rust:build',
-    outputs: ['{options.target-dir}'],
+    outputs: ['{options.artifact-dir}'],
     options: {
       ...additionalOptions,
     },
@@ -28,7 +28,7 @@ export function addCheckExecutor(
 ): TargetConfiguration {
   return {
     executor: '@monodon/rust:check',
-    outputs: ['{options.target-dir}'],
+    outputs: [],
     options: {
       ...additionalOptions,
     },
@@ -41,7 +41,7 @@ export function addTestExecutor(
   return {
     cache: true,
     executor: '@monodon/rust:test',
-    outputs: ['{options.target-dir}'],
+    outputs: [],
     options: {
       ...additionalOptions,
     },
@@ -58,7 +58,7 @@ export function addRunExecutor(
 ): TargetConfiguration {
   return {
     executor: '@monodon/rust:run',
-    outputs: ['{options.target-dir}'],
+    outputs: [],
     options: {
       ...additionalOptions,
     },
@@ -76,7 +76,7 @@ export function addLintExecutor(
   return {
     cache: true,
     executor: '@monodon/rust:lint',
-    outputs: ['{options.target-dir}'],
+    outputs: [],
     options: {
       ...additionalOptions,
     },

@@ -32,12 +32,6 @@ function addFiles(tree: Tree, options: NormalizedSchema) {
     template: '',
   };
   generateFiles(tree, path.join(__dirname, 'files'), './', templateOptions);
-  tree.write(
-    '.cargo/config.toml',
-    `[build]
-target-dir = 'dist/target'
-`
-  );
 }
 
 function includeProjectGraphPlugin(tree: Tree) {

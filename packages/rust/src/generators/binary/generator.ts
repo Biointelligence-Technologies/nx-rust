@@ -50,10 +50,12 @@ export default async function binaryGenerator(
     projectType: 'application',
     sourceRoot: `${normalizedOptions.projectRoot}/src`,
     targets: {
-      build: addBuildExecutor({ 'target-dir': normalizedOptions.targetDir }),
-      test: addTestExecutor({ 'target-dir': normalizedOptions.targetDir }),
-      lint: addLintExecutor({ 'target-dir': normalizedOptions.targetDir }),
-      run: addRunExecutor({ 'target-dir': normalizedOptions.targetDir }),
+      build: addBuildExecutor({
+        'artifact-dir': normalizedOptions.artifactDir,
+      }),
+      test: addTestExecutor(),
+      lint: addLintExecutor(),
+      run: addRunExecutor(),
     },
     tags: normalizedOptions.parsedTags,
   });

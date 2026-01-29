@@ -17,6 +17,7 @@ describe('normalize options', () => {
     });
     expect(options).toMatchInlineSnapshot(`
       Object {
+        "artifactDir": "dist/test_directory_sub_sub_two_test_name",
         "directory": "test-directory/sub/sub-two",
         "edition": "2021",
         "name": "test-name",
@@ -28,7 +29,7 @@ describe('normalize options', () => {
         "projectName": "test_directory_sub_sub_two_test_name",
         "projectRoot": "./test_directory/sub/sub_two/test_name",
         "tags": "test-tag, test-tag-two",
-        "targetDir": "dist/target/test_directory_sub_sub_two_test_name",
+        "targetDir": "target",
       }
     `);
   });
@@ -40,6 +41,7 @@ describe('normalize options', () => {
     });
     expect(options).toMatchInlineSnapshot(`
       Object {
+        "artifactDir": "dist/test_directory_sub_sub_two_test_name",
         "directory": "test-directory/sub/sub-two",
         "edition": "2021",
         "name": "test-name",
@@ -51,7 +53,7 @@ describe('normalize options', () => {
         "projectName": "test_directory_sub_sub_two_test_name",
         "projectRoot": "./test_directory/sub/sub_two/test_name",
         "tags": "test-tag, test-tag-two",
-        "targetDir": "dist/target/test_directory_sub_sub_two_test_name",
+        "targetDir": "target",
       }
     `);
   });
@@ -70,13 +72,14 @@ describe('normalize options', () => {
 
     expect(options).toMatchInlineSnapshot(`
       Object {
+        "artifactDir": "dist/test_name",
         "edition": "2021",
         "name": "test-name",
         "parsedTags": Array [],
         "projectDirectory": "test_name",
         "projectName": "test_name",
         "projectRoot": "test_name",
-        "targetDir": "dist/target/test_name",
+        "targetDir": "target",
       }
     `);
   });
