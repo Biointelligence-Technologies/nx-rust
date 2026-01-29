@@ -26,7 +26,7 @@ describe('rust generator', () => {
       Object {
         "dependencies": Object {},
         "package": Object {
-          "edition": "2021",
+          "edition": "2024",
           "name": "test_name",
           "version": "0.1.0",
         },
@@ -77,7 +77,7 @@ describe('rust generator', () => {
       Object {
         "dependencies": Object {},
         "package": Object {
-          "edition": "2021",
+          "edition": "2024",
           "name": "test_dir_test_name",
           "version": "0.1.0",
         },

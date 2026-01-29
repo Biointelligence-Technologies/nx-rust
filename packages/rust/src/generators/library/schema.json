@@ -16,8 +16,8 @@
     "edition": {
       "type": "string",
       "description": "The edition of Rust to use for this binary (default is 2021)",
-      "default": "2021",
-      "enum": ["2015", "2018", "2021"]
+      "default": "2024",
+      "enum": ["2015", "2018", "2021", "2024"]
     },
     "tags": {
       "type": "string",
