@@ -1,6 +1,6 @@
 export interface RustBinaryGeneratorSchema {
   name: string;
-  edition?: '2015' | '2018' | '2021';
+  edition?: '2015' | '2018' | '2021' | '2024';
   tags?: string;
   directory?: string;
 }
