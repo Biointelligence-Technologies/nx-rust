@@ -19,7 +19,7 @@ describe('normalize options', () => {
       Object {
         "artifactDir": "dist/test_directory_sub_sub_two_test_name",
         "directory": "test-directory/sub/sub-two",
-        "edition": "2021",
+        "edition": "2024",
         "name": "test-name",
         "parsedTags": Array [
           "test-tag",
@@ -43,7 +43,7 @@ describe('normalize options', () => {
       Object {
         "artifactDir": "dist/test_directory_sub_sub_two_test_name",
         "directory": "test-directory/sub/sub-two",
-        "edition": "2021",
+        "edition": "2024",
         "name": "test-name",
         "parsedTags": Array [
           "test-tag",
@@ -73,7 +73,7 @@ describe('normalize options', () => {
     expect(options).toMatchInlineSnapshot(`
       Object {
         "artifactDir": "dist/test_name",
-        "edition": "2021",
+        "edition": "2024",
         "name": "test-name",
         "parsedTags": Array [],
         "projectDirectory": "test_name",

@@ -30,7 +30,7 @@ describe('add-napi generator', () => {
       [package]
       name = 'test'
       version = '0.1.0'
-      edition = '2021'
+      edition = '2024'
 
       [dependencies]
       napi = { version = '2.10.2', default-features = false, features = [
